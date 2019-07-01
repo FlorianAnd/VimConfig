@@ -7,6 +7,7 @@ source ~/.vim_runtime/vimrcs/extended.vim
 nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType python noremap <buffer> <F6> :call Autopep8()<CR>
 au FileType python setlocal formatprg=autopep8\ -
 try
 source ~/.vim_runtime/my_configs.vim
