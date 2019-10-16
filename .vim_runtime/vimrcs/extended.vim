@@ -28,8 +28,10 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-set background=dark
 colorscheme peaksea
+set background=dark
+let t:is_transparent = 0
+hi Normal guibg=NONE ctermbg=NONE
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
